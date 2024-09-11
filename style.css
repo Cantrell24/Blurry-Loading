@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+*{
+    box-sizing: border-box; /*property allows us to include the padding and border in an element's total width and height.
+    */
+}
+
+
+
+body{
+    font-family: 'Ubuntu' ,sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background: url('https://www.hrssjobs.com/wp-content/uploads/2021/12/AdobeStock_296099066-1.jpeg') no-repeat center center/cover;
+
+}
+
+.bg{
+    background: url('https://www.hrssjobs.com/wp-content/uploads/2021/12/AdobeStock_296099066-1.jpeg') no-repeat center center/cover !important;
+    position: absolute !important; /*https://developer.mozilla.org/en-US/docs/Web/CSS/position
+    The element is removed from the normal document flow, and no space is created for the element in the page layout. The element is positioned relative to its closest positioned ancestor (if any) or to the initial containing block. Its final position is determined by the values of top, right, bottom, and left.*/
+    top: -30px!important;
+    left: -30px!important;
+    width: calc(100vw +60px)!important;
+    height: calc(100vh + 60px)!important;
+    z-index: -1 !important;
+    filter: blur(50px) !important;
+}
+
+.loading-text{
+    font-size: 80px;
+    color: #fa0a0a;
+}
